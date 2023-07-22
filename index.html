@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Тестовое задание</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.cdnfonts.com/css/euclid-circular-a"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__inner">
+        <a class="header__logo" href="#!">
+          <img src="images/logo.png" alt="logo" width="70" height="70" />
+        </a>
+        <nav class="menu header__menu">
+          <ul class="menu__list">
+            <li class="menu__item">Главная</li>
+            <li class="menu__item">Каталог</li>
+            <li class="menu__item">Новости</li>
+            <li class="menu__item">Наш АСЦ</li>
+            <li class="menu__item">Контакты</li>
+          </ul>
+        </nav>
+        <button class="header__search" type="button"></button>
+        <ul class="header__list">
+          <li class="header__item">
+            <span class="header__name">Мария</span>
+            <a class="header__link header__link--person" href="#!"></a>
+            <!-- <div class="modal">
+              <div class="modal__top">
+                <a class="header__link header__link" href="#!"></a>
+                <span>Мария</span>
+              </div>
+              <ul class="modal__list">
+                <li class="modal__item">
+                  <a href="#!">Личный кабинет</a>
+                </li>
+                <li class="modal__item">
+                  <a href="#!">История заказов</a>
+                </li>
+                <li class="modal__item">
+                  <a href="#!">Персональные предложения</a>
+                </li>
+                <li class="modal__item">
+                  <a href="#!">Выйти</a>
+                </li>
+              </ul>
+            </div> -->
+          </li>
+          <li class="header__item">
+            <a class="header__link header__link--signal" href="#!"></a>
+          </li>
+          <li class="header__item">
+            <a class="header__link header__link--like" href="#!"> </a>
+          </li>
+          <li class="header__item">
+            <a class="header__link header__link--cart" href="#!"></a>
+            <span class="header__count">3</span>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section class="intro">
+        <div class="container">
+          <div class="intro__inner">
+            <div class="intro__decor">
+              <img
+                src="./images/dell-text.svg"
+                alt="dell"
+                width="766"
+                height="201"
+              />
+            </div>
+
+            <div class="intro__slider">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="intro__wrapper">
+                      <div class="intro__info">
+                        <div class="intro__scroll" href="#!">
+                          <span>Scroll to catalog</span>
+                        </div>
+                        <div>
+                          <span class="intro__top">Новое поступление</span>
+                          <div class="title intro__title">
+                            Лучшие товары от компании Dell
+                          </div>
+                          <a class="my-button" href="#!"
+                            ><span></span> Подробнее</a
+                          >
+                        </div>
+                      </div>
+                      <img
+                        class="intro__photo"
+                        src="./images/laptop.png"
+                        alt="laptop"
+                        height="557"
+                        width="555"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="intro__wrapper">
+                      <div class="intro__info">
+                        <div class="intro__scroll" href="#!">
+                          <span>Scroll to catalog</span>
+                        </div>
+                        <div>
+                          <span class="intro__top">Новое поступление</span>
+                          <div class="title intro__title">
+                            Лучшие товары от компании Dell
+                          </div>
+                          <a class="my-button" href="#!"
+                            ><span></span> Подробнее</a
+                          >
+                        </div>
+                      </div>
+                      <img
+                        class="intro__photo"
+                        src="./images/laptop.png"
+                        alt="laptop"
+                        height="557"
+                        width="555"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="intro__instruments">
+                  <div class="swiper-pagination"></div>
+                  <button class="swiper-button-next"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="catalog">
+        <div class="container">
+          <div class="catalog__inner">
+            <div class="catalog__list">
+              <div class="catalog__info">
+                <div class="title catalog__title">Каталог товаров от Dell</div>
+                <p class="catalog__text">
+                  Наша компания является <br />
+                  зарегистрированным и официальным партнером Dell в России.
+                </p>
+                <a class="my-button" href="#!"><span></span> В каталог</a>
+              </div>
+              <article class="catalog__item">
+                <span class="catalog__num">01</span>
+                <div class="catalog__box">
+                  <img
+                    class="catalog__img"
+                    src="./images/catalog-1.png"
+                    alt="photo-1"
+                    width="415"
+                    height="245"
+                  />
+                </div>
+
+                <div class="catalog__description">
+                  <p class="catalog__count">105 товаров</p>
+                  <div class="catalog__heading">Ноутбуки</div>
+                </div>
+              </article>
+              <article class="catalog__item">
+                <span class="catalog__num">02</span>
+                <div class="catalog__box">
+                  <img
+                    class="catalog__img"
+                    src="./images/catalog-2.png"
+                    alt="photo-2"
+                    width="267"
+                    height="244"
+                  />
+                </div>
+
+                <div class="catalog__description">
+                  <p class="catalog__count">65 товаров</p>
+                  <div class="catalog__heading">Персональные компьютеры</div>
+                </div>
+              </article>
+              <article class="catalog__item">
+                <span class="catalog__num">03</span>
+                <div class="catalog__box">
+                  <img
+                    class="catalog__img"
+                    src="./images/catalog-3.png"
+                    alt="photo-1"
+                    width="337"
+                    height="137"
+                  />
+                </div>
+
+                <div class="catalog__description">
+                  <p class="catalog__count">13 товаров</p>
+                  <div class="catalog__heading">Cерверы</div>
+                </div>
+              </article>
+              <article class="catalog__item">
+                <span class="catalog__num">04</span>
+                <div class="catalog__box">
+                  <img
+                    class="catalog__img"
+                    src="./images/catalog-4.png"
+                    alt="photo-1"
+                    width="289"
+                    height="159"
+                  />
+                </div>
+
+                <div class="catalog__description">
+                  <p class="catalog__count">2345 товаров</p>
+                  <div class="catalog__heading">Dell EMC</div>
+                </div>
+              </article>
+              <article class="catalog__item">
+                <span class="catalog__num">05</span>
+                <div class="catalog__box">
+                  <img
+                    class="catalog__img"
+                    src="./images/catalog-5.png"
+                    alt="photo-1"
+                    width="323"
+                    height="213"
+                  />
+                </div>
+
+                <div class="catalog__description">
+                  <p class="catalog__count">195 товаров</p>
+                  <div class="catalog__heading">Запасные части к Dell EMC</div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="benefits">
+        <div class="container">
+          <div class="benefits__top">
+            <div class="benefits__info">
+              <div class="title benefits__title">Наши преимущества</div>
+              <p class="benefits__text">
+                Оптимизация мощностей (расходов, социальных выплат и т.п.)
+                позволили компании на 4,7% понизить цены по сравнению
+                с конкурентами
+              </p>
+              <a class="my-button" href="#!"><span></span> Оставить заявку</a>
+            </div>
+          </div>
+          <div class="benefits__list">
+            <article class="benefits__item benefits__item--prices">
+              <div class="benefits__heading">Самые выгодные и низкие цены</div>
+              <p class="benefits__descr">
+                В наличии широкий ассортимент, а также доступные цены на
+                ноутбуки Dell
+              </p>
+            </article>
+            <article class="benefits__item benefits__item--service">
+              <div class="benefits__heading">
+                Авторизованный сервисный центр DELL
+              </div>
+              <p class="benefits__descr">
+                Сертифицированный сервисный центр по ремонту техники Dell
+                в России и странах СНГ
+              </p>
+            </article>
+            <article class="benefits__item benefits__item--tech">
+              <div class="benefits__heading">
+                Высокий уровень технической экспертизы
+              </div>
+              <p class="benefits__descr">
+                Мы прошли аттестацию в виде тестирования, где показали высокий
+                уровень знаний
+              </p>
+            </article>
+            <article class="benefits__item benefits__item--partner">
+              <div class="benefits__heading">Официальный партнер DELL</div>
+              <p class="benefits__descr">
+                Официальный поставщик продукции DELL в России и странах СНГ
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="news">
+        <div class="container">
+          <div class="news__top">
+            <div class="news__info">
+              <div class="title news__title">Последние новости</div>
+              <p class="news__subtitle">
+                Вы можете посмотреть ещё больше интересных новостей и узнать о
+                последних новинках, перейдя по кнопке
+              </p>
+            </div>
+            <div class="news__link">
+              <a class="my-button" href="#!"><span></span> Все новости</a>
+            </div>
+          </div>
+          <div class="news__list">
+            <div class="news-item__wrapper">
+              <article class="news-item">
+                <img
+                  class="news-item__img"
+                  src="./images/news-1.jpg"
+                  alt="news-1"
+                />
+                <div class="news-item__footer">
+                  <div class="news-item__box">
+                    <div class="news-item__heading">
+                      GE использует технологии Dell
+                    </div>
+                    <p class="news-item__text">
+                      Вы можете посмотреть ещё больше интересных
+                    </p>
+                  </div>
+
+                  <button class="news-item__btn" type="button"></button>
+                </div>
+              </article>
+              <div class="news-item__data">
+                <div class="news-item__day">11</div>
+                июля
+              </div>
+            </div>
+            <div class="news-item__wrapper">
+              <article class="news-item">
+                <img
+                  class="news-item__img"
+                  src="./images/news-2.jpg"
+                  alt="news-1"
+                />
+                <div class="news-item__footer">
+                  <div class="news-item__box">
+                    <div class="news-item__heading">
+                      GE использует технологии Dell
+                    </div>
+                    <p class="news-item__text">
+                      Вы можете посмотреть ещё больше интересных
+                    </p>
+                  </div>
+
+                  <button class="news-item__btn" type="button"></button>
+                </div>
+              </article>
+              <div class="news-item__data">
+                <div class="news-item__day">11</div>
+                июля
+              </div>
+            </div>
+            <div class="news-item__wrapper">
+              <article class="news-item">
+                <img
+                  class="news-item__img"
+                  src="./images/news-3.jpg"
+                  alt="news-1"
+                />
+                <div class="news-item__footer">
+                  <div class="news-item__box">
+                    <div class="news-item__heading">
+                      GE использует технологии Dell
+                    </div>
+                    <p class="news-item__text">
+                      Вы можете посмотреть ещё больше интересных
+                    </p>
+                  </div>
+
+                  <button class="news-item__btn" type="button"></button>
+                </div>
+              </article>
+              <div class="news-item__data">
+                <div class="news-item__day">11</div>
+                июля
+              </div>
+            </div>
+            <div class="news-item__wrapper">
+              <article class="news-item">
+                <img
+                  class="news-item__img"
+                  src="./images/news-4.jpg"
+                  alt="news-1"
+                />
+                <div class="news-item__footer">
+                  <div class="news-item__box">
+                    <div class="news-item__heading">
+                      GE использует технологии Dell
+                    </div>
+                    <p class="news-item__text">
+                      Вы можете посмотреть ещё больше интересных
+                    </p>
+                  </div>
+
+                  <button class="news-item__btn" type="button"></button>
+                </div>
+              </article>
+              <div class="news-item__data">
+                <div class="news-item__day">11</div>
+                июля
+              </div>
+            </div>
+            <div class="news-item__wrapper">
+              <article class="news-item">
+                <img
+                  class="news-item__img"
+                  src="./images/news-5.jpg"
+                  alt="news-1"
+                />
+                <div class="news-item__footer">
+                  <div class="news-item__box">
+                    <div class="news-item__heading">
+                      GE использует технологии Dell
+                    </div>
+                    <p class="news-item__text">
+                      Вы можете посмотреть ещё больше интересных
+                    </p>
+                  </div>
+
+                  <button class="news-item__btn" type="button"></button>
+                </div>
+              </article>
+              <div class="news-item__data">
+                <div class="news-item__day">11</div>
+                июля
+              </div>
+            </div>
+            <div class="news-item__wrapper">
+              <article class="news-item">
+                <img
+                  class="news-item__img"
+                  src="./images/news-6.jpg"
+                  alt="news-1"
+                />
+                <div class="news-item__footer">
+                  <div class="news-item__box">
+                    <div class="news-item__heading">
+                      GE использует технологии Dell
+                    </div>
+                    <p class="news-item__text">
+                      Вы можете посмотреть ещё больше интересных
+                    </p>
+                  </div>
+
+                  <button class="news-item__btn" type="button"></button>
+                </div>
+              </article>
+              <div class="news-item__data">
+                <div class="news-item__day">11</div>
+                июля
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contacts">
+        <div class="contacts__inner">
+          <div class="contacts__info">
+            <div class="title contacts__title">Наши контакты</div>
+            <p class="contacts__text">
+              Вы можете связаться с нашим онлайн-консультантом
+            </p>
+
+            <ul class="contacts__list">
+              <li class="contacts__item contacts__item--address">
+                <span class="contacts__caption contacts__caption--address"
+                  >Адрес</span
+                >
+                <p>Москва, ул. 3-я Хорошевская, дом 2, строение 1</p>
+              </li>
+              <li class="contacts__item contacts__item--email">
+                <span class="contacts__caption contacts__caption--email"
+                  >E-mail</span
+                >
+                <p>dell_ru@gmail.com</p>
+              </li>
+              <li class="contacts__item contacts__item--phone">
+                <span class="contacts__caption contacts__caption--phone"
+                  >Телефон</span
+                >
+                <p>+7 495 737-06-01</p>
+                <p>+7 495 737-06-01</p>
+              </li>
+            </ul>
+
+            <div class="social">
+              <a class="social__item social__item--facebook" href="#!"></a>
+              <a class="social__item social__item--watsapp" href="#!"></a>
+            </div>
+          </div>
+          <form class="contacts__form">
+            <div class="title contacts__heading">Оставьте заявку</div>
+            <p class="contacts__descr">
+              Оставьте свой номер, и мы перезвоним Вам.
+            </p>
+            <label class="contacts__label">
+              <span class="contacts__type">Ваше имя</span>
+              <input
+                class="input contacts__input"
+                type="text"
+                name="person-name"
+                required
+                autocomplete="off"
+              />
+            </label>
+            <label class="contacts__label">
+              <span class="contacts__type">Номер телефона</span>
+              <input
+                class="input contacts__input contacts__input--tel"
+                name="person-phone"
+                type="tel"
+                size="10"
+                required
+                autocomplete="off"
+              />
+            </label>
+
+            <label class="contacts__label">
+              <span class="contacts__type">Комментарий</span>
+              <textarea
+                class="input contacts__comment"
+                name="person-comment"
+                autocomplete="off"
+              ></textarea>
+            </label>
+
+            <button class="my-button contacts__submit" type="submit">
+              <span></span> Заказать
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <a class="footer__logo" href="#!">
+            <img
+              src="./images/footer-logo.svg"
+              alt="footer-logo"
+              width="112"
+              height="112"
+            />
+          </a>
+
+          <div class="footer__list">
+            <div class="footer__navigation">
+              <div class="footer__heading">Каталог</div>
+              <a class="footer__link" href="#!">Ноутбуки</a>
+              <a class="footer__link" href="#!">Персональные компьютеры</a>
+              <a class="footer__link" href="#!">Серверы</a>
+              <a class="footer__link" href="#!">Dell EMC</a>
+              <a class="footer__link" href="#!">Запасные части к Dell EMC</a>
+            </div>
+            <div class="footer__navigation">
+              <div class="footer__heading">Личный кабинет</div>
+              <a class="footer__link" href="#!">Профиль</a>
+              <a class="footer__link" href="#!">История заказов</a>
+              <a class="footer__link" href="#!">SMS-уведомления</a>
+              <a class="footer__link" href="#!">Избранное</a>
+              <a class="footer__link" href="#!">Сравнение товаров</a>
+            </div>
+            <div class="footer__navigation">
+              <div class="footer__heading">Помощь</div>
+              <a class="footer__link" href="#!">Доставка и оплата</a>
+              <a class="footer__link" href="#!">Контакты</a>
+              <a class="footer__link" href="#!">FAQ</a>
+              <a class="footer__link" href="#!">Наш АСЦ</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <ul class="footer__contacts">
+            <li class="footer__contact">
+              <span class="footer__caption">Адрес</span>
+              <p>Москва, ул. 3-я Хорошевская, дом 2, строение 1</p>
+            </li>
+
+            <li class="footer__contact">
+              <span class="footer__caption">Телефон</span>
+              <p>
+                <span>+7 495 737-06-01</span>,
+                <span>+7 495 737-06-01</span>
+              </p>
+            </li>
+            <li class="footer__contact">
+              <span class="footer__caption">E-mail</span>
+              <p>dell_ru@gmail.com</p>
+            </li>
+          </ul>
+
+          <div class="social">
+            <a class="social__item social__item--facebook" href="#!"></a>
+            <a class="social__item social__item--watsapp" href="#!"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
