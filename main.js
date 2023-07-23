@@ -11,7 +11,7 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
-// mask
+// input mask for phone
 
 function maskPhone(selector, masked = "+7 (___) ___-__-__") {
   const elems = document.querySelectorAll(selector);
@@ -57,3 +57,38 @@ function maskPhone(selector, masked = "+7 (___) ___-__-__") {
 }
 
 maskPhone(".contacts__input--tel");
+
+const personButton = document.querySelector(".header__link--person");
+const headerLinks = document.querySelectorAll(".header__link");
+const modal = document.querySelector(".modal");
+
+headerLinks.forEach((link) =>
+  link.addEventListener("mouseenter", () => {
+    const needToCloseModal =
+      !link.classList.contains("header__link--person") &&
+      modal.style.display === "block";
+
+    if (needToCloseModal) {
+      console.log(1);
+      modal.style.display = "none";
+    }
+  })
+);
+
+personButton.addEventListener("mouseenter", () => {
+  modal.style.display = "block";
+});
+
+modal.addEventListener("mouseleave", () => {
+  modal.style.display = "none";
+});
+
+// burger
+
+const burger = document.querySelector(".burger");
+const menu = document.querySelector(".menu");
+
+burger.addEventListener("click", (e) => {
+  e.target.classList.toggle("close");
+  menu.classList.toggle("open");
+});
