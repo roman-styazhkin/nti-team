@@ -7,7 +7,7 @@ const swiper = new Swiper(".swiper", {
   },
 
   navigation: {
-    nextEl: ".swiper-button-next",
+    nextEl: ".intro__next",
   },
 });
 
@@ -87,8 +87,17 @@ modal.addEventListener("mouseleave", () => {
 
 const burger = document.querySelector(".burger");
 const menu = document.querySelector(".menu");
+const overlay = document.querySelector(".overlay");
 
-burger.addEventListener("click", (e) => {
+const toggleMenu = (e) => {
   e.target.classList.toggle("close");
   menu.classList.toggle("open");
-});
+  if (menu.classList.contains("open")) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "visible";
+  }
+};
+
+burger.addEventListener("click", toggleMenu);
+overlay.addEventListener("click", toggleMenu);

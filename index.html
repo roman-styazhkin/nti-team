@@ -85,9 +85,9 @@
             </div>
 
             <div class="intro__slider">
-              <div class="swiper">
+              <div class="swiper intro__swiper">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide">
+                  <div class="swiper-slide intro__slide">
                     <div class="intro__wrapper">
                       <div class="intro__info">
                         <div class="intro__scroll" href="#!">
@@ -103,50 +103,61 @@
                           >
                         </div>
                       </div>
-                      <picture>
-                        <source
-                          media="(max-width: 375px)"
-                          srcset="./images/laptop-mobile.png"
-                        />
-                        <img srcset="./images/laptop.png" />
-                      </picture>
+
+                      <img
+                        class="intro__img"
+                        src="./images/laptop.png"
+                        alt="photo-slider"
+                      />
                     </div>
                   </div>
 
-                  <div class="swiper-slide">
+                  <div class="swiper-slide intro__slide">
                     <div class="intro__wrapper">
                       <div class="intro__info">
+                        <div class="intro__scroll" href="#!">
+                          <span>Scroll to catalog</span>
+                        </div>
                         <div>
                           <span class="intro__top">Новое поступление</span>
                           <div class="title intro__title">
-                            Выгодное предложение от Dell
+                            Лучшие товары от компании Dell
                           </div>
                           <a class="my-button" href="#!"
                             ><span></span> Подробнее</a
                           >
                         </div>
                       </div>
-                      <picture>
-                        <source
-                          media="(max-width: 375px)"
-                          srcset="./images/laptop-mobile.png"
-                        />
-                        <img srcset="./images/laptop.png" />
-                      </picture>
+
+                      <img
+                        class="intro__img"
+                        src="./images/laptop.png"
+                        alt="photo-slider"
+                      />
                     </div>
                   </div>
                 </div>
                 <div class="intro__instruments">
                   <div class="swiper-pagination"></div>
-                  <button class="swiper-button-next"></button>
+                  <button class="intro__next" type="button">
+                    <img src="./images/slider-arrow.svg" alt="offer-arrow" />
+                  </button>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
+        <div class="intro__banner">
+          <div class="intro__box">
+            <a class="intro__link" href="#!"></a>
+            <div class="intro__caption">Выгодное предложение от Dell</div>
+            <img src="./images/slider-arrow.svg" alt="offer-arrow" />
+          </div>
+        </div>
       </section>
 
-      <!-- <section class="catalog">
+      <section class="catalog">
         <div class="container">
           <div class="catalog__inner">
             <div class="catalog__list">
@@ -161,13 +172,20 @@
               <article class="catalog__item">
                 <span class="catalog__num">01</span>
                 <div class="catalog__box">
-                  <img
-                    class="catalog__img"
-                    src="./images/catalog-1.png"
-                    alt="photo-1"
-                    width="415"
-                    height="245"
-                  />
+                  <picture>
+                    <source
+                      media="(max-width: 375px)"
+                      srcset="./images/catalog-1-mobile.png"
+                      width="302"
+                      height="178"
+                    />
+                    <img
+                      srcset="./images/catalog-1.png"
+                      width="415"
+                      height="245"
+                      alt="photo-1"
+                    />
+                  </picture>
                 </div>
 
                 <div class="catalog__description">
@@ -178,13 +196,21 @@
               <article class="catalog__item">
                 <span class="catalog__num">02</span>
                 <div class="catalog__box">
-                  <img
-                    class="catalog__img"
-                    src="./images/catalog-2.png"
-                    alt="photo-2"
-                    width="267"
-                    height="244"
-                  />
+                  <div class="catalog__img">
+                    <picture>
+                      <source
+                        media="(max-width: 375px)"
+                        srcset="./images/catalog-2-mobile.png"
+                        width="210"
+                        height="193"
+                      />
+                      <img
+                        srcset="./images/catalog-2.png"
+                        width="267"
+                        height="244"
+                        alt="photo-2"
+                      />
+                  </div>
                 </div>
 
                 <div class="catalog__description">
@@ -462,7 +488,7 @@
         </div>
       </section>
 
-      <section class="contacts">
+      <!-- <section class="contacts">
         <div class="contacts__inner">
           <div class="contacts__info">
             <div class="title contacts__title">Наши контакты</div>
